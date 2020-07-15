@@ -22,11 +22,15 @@ function timer(){
 }
 function start(){
 interval = setInterval(timer,10);
+var s=document.getElementById("start");
+s.disabled= true;
 }
  
 function stop(){
 
     clearInterval(interval);
+    var s=document.getElementById("start");
+s.disabled= false;
 }
 function reset(){
     min=0;
